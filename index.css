@@ -1,18 +1,37 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 .html {
   font-size: 62.5%;
 }
-.container {
+.header {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+  justify-content: space-between;
+  padding: 1.5rem 4rem;
 }
-
+.navbar {
+  width: 10%;
+  display: flex;
+  /* display: flex; */
+  gap: 40px;
+}
+.navbar > li {
+  list-style: none;
+}
+.users-data {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.user {
+  background-color: beige;
+  padding: 2rem;
+  border-radius: 100px;
+}
 button {
-  width: 60px;
-  height: 60px;
+  display: flex;
+  padding: 1rem;
+  border-radius: 20%;
 }

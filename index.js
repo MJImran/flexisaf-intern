@@ -1,42 +1,18 @@
 "use strict";
 
-const secondsBox = document.querySelector(".second-space");
-const minutesBox = document.querySelector(".minute-space");
-const hoursBox = document.querySelector(".hour-space");
-const btn = document.querySelector(".btn");
-
-let hours;
-let minutes;
-let seconds;
-
-function updateClock() {
-  const now = new Date();
-  hours = String(now.getHours()).padStart(2, "0");
-  minutes = String(now.getMinutes()).padStart(2, "0");
-  seconds = String(now.getSeconds()).padStart(2, "0");
-
-  hoursBox.textContent = hours;
-  minutesBox.textContent = minutes;
-  secondsBox.textContent = seconds;
-}
-
-setTimeout(() => {
-  console.log("timing tick");
-}, 60000);
-
-setInterval(updateClock, 1000);
+const dataSection = document.querySelector(".users-data");
+const displayBtn = document.querySelector(".display-btn");
+const clearBtn = document.querySelector(".clear-btn");
 
 const usersData = [
   { name: "Muhammad", age: 23, degree: true },
   { name: "Ayo", age: 25, degree: false },
 ];
 
-const dataSection = document.querySelector(".users-data");
-const displayBtn = document.querySelector(".display-btn");
-
 function createUserCard(data) {
   data.forEach((element) => {
     const article = document.createElement("article");
+    article.classList.add("user");
     const userName = document.createElement("h2");
     userName.textContent = `name: ${element.name}`;
     const age = document.createElement("p");
@@ -52,6 +28,14 @@ function createUserCard(data) {
   });
 }
 
+function clearData() {
+  dataSection.textContent = "";
+}
+
 displayBtn.addEventListener("click", () => {
   createUserCard(usersData);
+});
+
+clearBtn.addEventListener("click", () => {
+  clearData();
 });
