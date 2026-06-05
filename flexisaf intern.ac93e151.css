@@ -13,16 +13,17 @@
   justify-content: space-between;
   width: 100%;
   margin-bottom: 1.5rem;
-  padding: 1.5rem 4rem;
+  padding: 1rem 1.5rem;
   display: flex;
 }
 
 .header h1 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.5rem;
 }
 
 .header ul {
-  gap: 40px;
+  gap: 1rem;
   display: flex;
 }
 
@@ -34,7 +35,7 @@
   background-color: #9dbdb8;
   border: none;
   border-radius: 10px;
-  padding: 1rem;
+  padding: .5rem;
   font-size: 1rem;
   font-weight: 550;
   display: flex;
