@@ -1,0 +1,28 @@
+{
+  "hompage": "https://mjimran.github.io/flexisaf-intern/",
+  "name": "flexisaf-intern",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel serve ./index.html",
+    "build": "parcel build ./index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MJImran/flexisaf-intern.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MJImran/flexisaf-intern/issues"
+  },
+  "homepage": "https://github.com/MJImran/flexisaf-intern#readme",
+  "description": "",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.4",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.4"
+  }
+}
